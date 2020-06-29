@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name TMDS442PNP)(type KiCad)(uri /media/kicad/projects/HDMI-Basic-Switch/hdmi-switch-project/TMDS442-functional-2020-06-27_07-51-25/footprints.pretty)(options "")(descr "")(disabled))
+)
