@@ -4,18 +4,16 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 3 4
-Title ""
-Date ""
+Title "HDMI Switch 4:2 modul"
+Date "2020-06-30"
 Rev ""
 Comp ""
-Comment1 ""
-Comment2 ""
+Comment1 "Devel board"
+Comment2 "HDMI part"
 Comment3 ""
 Comment4 ""
 $EndDescr
 Text GLabel 7400 1450 3    50   Input ~ 0
-SHIELD
-Text GLabel 7300 3150 3    50   Input ~ 0
 SHIELD
 Text GLabel 10200 3100 3    50   Input ~ 0
 SHIELD
@@ -129,9 +127,6 @@ Wire Wire Line
 Connection ~ 10200 3000
 Wire Wire Line
 	7300 3050 7300 2950
-Wire Wire Line
-	7300 3150 7300 3050
-Connection ~ 7300 3050
 Wire Wire Line
 	7400 1350 7400 1250
 Wire Wire Line
@@ -1010,7 +1005,7 @@ HDMI_GPIO
 Text Label 3700 6800 0    50   ~ 0
 VSDAJ
 Wire Wire Line
-	3700 6800 4400 6800
+	3700 6800 3900 6800
 Connection ~ 3350 7500
 Wire Wire Line
 	3350 7550 3350 7500
@@ -1500,41 +1495,37 @@ F 3 "" H 3350 1000 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3350 1050 3350 1000
-Entry Wire Line
-	3850 550  3950 650 
 Wire Wire Line
-	3950 650  3950 1000
+	3900 6800 3900 6950
 $Comp
 L Device:R R_VSDAJ?
 U 1 1 5FA38789
-P 3950 1150
+P 3900 7100
 AR Path="/5FA38789" Ref="R_VSDAJ?"  Part="1" 
 AR Path="/5F9FB5DF/5FA38789" Ref="R_VSDAJ1"  Part="1" 
-F 0 "R_VSDAJ1" H 4020 1196 50  0000 L CNN
-F 1 "4K6" H 4020 1105 50  0000 L CNN
-F 2 "Resistor_SMD:R_1020_2550Metric" V 3880 1150 50  0001 C CNN
-F 3 "~" H 3950 1150 50  0001 C CNN
-F 4 "Precission" H 3950 1150 50  0001 C CNN "Note"
-	1    3950 1150
+F 0 "R_VSDAJ1" H 3970 7146 50  0000 L CNN
+F 1 "4K6" H 3970 7055 50  0000 L CNN
+F 2 "Resistor_SMD:R_1020_2550Metric" V 3830 7100 50  0001 C CNN
+F 3 "~" H 3900 7100 50  0001 C CNN
+F 4 "Precission" H 3900 7100 50  0001 C CNN "Note"
+	1    3900 7100
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 5FA38782
-P 3950 1450
+P 3900 7400
 AR Path="/5FA38782" Ref="#PWR?"  Part="1" 
 AR Path="/5F9FB5DF/5FA38782" Ref="#PWR06"  Part="1" 
-F 0 "#PWR06" H 3950 1200 50  0001 C CNN
-F 1 "GND" H 3955 1277 50  0000 C CNN
-F 2 "" H 3950 1450 50  0001 C CNN
-F 3 "" H 3950 1450 50  0001 C CNN
-	1    3950 1450
+F 0 "#PWR06" H 3900 7150 50  0001 C CNN
+F 1 "GND" H 3905 7227 50  0000 C CNN
+F 2 "" H 3900 7400 50  0001 C CNN
+F 3 "" H 3900 7400 50  0001 C CNN
+	1    3900 7400
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3950 1300 3950 1450
-Entry Wire Line
-	4400 6800 4500 6900
+	3900 7250 3900 7400
 Connection ~ 10250 6250
 Wire Wire Line
 	10250 6300 10250 6250
@@ -1789,22 +1780,25 @@ Entry Wire Line
 	8150 5650 8250 5750
 Connection ~ 9050 5850
 Connection ~ 9050 6250
-Wire Bus Line
-	3650 550  4300 550 
-Wire Bus Line
-	4750 2150 7050 2150
-Wire Bus Line
-	7550 3800 9850 3800
-Wire Bus Line
-	7550 2150 9850 2150
-Wire Bus Line
-	4650 3850 6950 3850
-Wire Bus Line
-	4600 5700 6800 5700
+Connection ~ 7300 3050
 Wire Bus Line
 	7600 5750 9900 5750
 Wire Bus Line
-	4500 1250 4500 7250
-Wire Bus Line
 	550  1500 550  7200
+Wire Bus Line
+	4500 1850 4500 4800
+Wire Bus Line
+	4600 5700 6800 5700
+Wire Bus Line
+	4650 3850 6950 3850
+Wire Bus Line
+	7550 2150 9850 2150
+Wire Bus Line
+	7550 3800 9850 3800
+Wire Bus Line
+	4750 2150 7050 2150
+Wire Wire Line
+	7300 3150 7300 3050
+Text GLabel 7300 3150 3    50   Input ~ 0
+SHIELD
 $EndSCHEMATC

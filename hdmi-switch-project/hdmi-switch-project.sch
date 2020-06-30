@@ -1,14 +1,14 @@
 EESchema Schematic File Version 4
 EELAYER 30 0
 EELAYER END
-$Descr A3 11693 16535 portrait
+$Descr A3 16535 11693
 encoding utf-8
 Sheet 1 4
-Title ""
-Date ""
+Title "HDMI Switch 4:2 modul"
+Date "2020-06-30"
 Rev ""
 Comp ""
-Comment1 ""
+Comment1 "Devel board"
 Comment2 ""
 Comment3 ""
 Comment4 ""
@@ -98,10 +98,10 @@ Wire Wire Line
 Wire Wire Line
 	6900 2550 6050 2550
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0101
 U 1 1 60C19124
 P 3000 4200
-F 0 "#PWR?" H 3000 3950 50  0001 C CNN
+F 0 "#PWR0101" H 3000 3950 50  0001 C CNN
 F 1 "GND" H 3005 4027 50  0000 C CNN
 F 2 "" H 3000 4200 50  0001 C CNN
 F 3 "" H 3000 4200 50  0001 C CNN
@@ -115,10 +115,10 @@ Wire Wire Line
 Wire Wire Line
 	3000 4150 3000 4200
 $Comp
-L Device:Jumper JP_OVS
+L Device:Jumper JP_OVS1
 U 1 1 60C790A5
 P 6500 3500
-F 0 "JP_OVS" H 6500 3764 50  0000 C CNN
+F 0 "JP_OVS1" H 6500 3764 50  0000 C CNN
 F 1 "OVS_JUMPER" H 6500 3673 50  0000 C CNN
 F 2 "" H 6500 3500 50  0001 C CNN
 F 3 "~" H 6500 3500 50  0001 C CNN

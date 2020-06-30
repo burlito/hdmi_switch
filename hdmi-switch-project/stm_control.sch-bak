@@ -4,11 +4,11 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 4 4
-Title ""
-Date ""
+Title "HDMI Switch 4:2 modul"
+Date "2020-06-30"
 Rev ""
 Comp ""
-Comment1 ""
+Comment1 "Devel board"
 Comment2 ""
 Comment3 ""
 Comment4 ""
@@ -208,37 +208,37 @@ F 3 "~" H 9550 2600 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Entry Wire Line
-	4950 2450 5050 2550
+	5050 2450 5150 2550
 Entry Wire Line
-	4950 2550 5050 2650
+	5050 2550 5150 2650
 Entry Wire Line
-	4950 2750 5050 2850
+	5050 2750 5150 2850
 Entry Wire Line
-	4950 2850 5050 2950
+	5050 2850 5150 2950
 Entry Wire Line
-	4950 2950 5050 3050
+	5050 2950 5150 3050
 Entry Wire Line
-	4950 3950 5050 4050
+	5050 3950 5150 4050
 Entry Wire Line
-	4950 4050 5050 4150
+	5050 4050 5150 4150
 Entry Wire Line
-	4950 4150 5050 4250
+	5050 4150 5150 4250
 Entry Wire Line
-	4950 4250 5050 4350
+	5050 4250 5150 4350
 Wire Wire Line
-	5800 4350 5050 4350
+	5800 4350 5150 4350
 Wire Wire Line
-	5050 4250 5800 4250
+	5150 4250 5800 4250
 Wire Wire Line
-	5050 3050 5800 3050
+	5150 3050 5800 3050
 Wire Wire Line
-	5800 2950 5050 2950
+	5800 2950 5150 2950
 Wire Wire Line
-	5050 2850 5800 2850
+	5150 2850 5800 2850
 Wire Wire Line
-	5800 2650 5050 2650
+	5800 2650 5150 2650
 Wire Wire Line
-	5050 2550 5800 2550
+	5150 2550 5800 2550
 $Comp
 L Device:C C_XTAL11
 U 1 1 5F5CB15B
@@ -332,9 +332,9 @@ Wire Wire Line
 	8850 2800 8850 2350
 Wire Wire Line
 	8850 2350 8950 2350
-Text Label 5050 2950 0    50   ~ 0
+Text Label 5150 2950 0    50   ~ 0
 XTAL2_RTC_A
-Text Label 5050 3050 0    50   ~ 0
+Text Label 5150 3050 0    50   ~ 0
 XTAL2_RTC_B
 Entry Wire Line
 	10750 2350 10850 2450
@@ -350,9 +350,9 @@ Text Label 10250 2350 0    50   ~ 0
 XTAL2_RTC_A
 Text Label 10250 2800 0    50   ~ 0
 XTAL2_RTC_B
-Text Label 5050 2550 0    50   ~ 0
+Text Label 5150 2550 0    50   ~ 0
 XTAL1_A
-Text Label 5050 2650 0    50   ~ 0
+Text Label 5150 2650 0    50   ~ 0
 XTAL1_B
 $Comp
 L Device:R R_USB11
@@ -445,17 +445,17 @@ Wire Wire Line
 Wire Wire Line
 	1050 3150 1050 3100
 Entry Wire Line
-	7850 4650 7950 4750
+	7650 4650 7750 4750
 Entry Wire Line
-	7850 4550 7950 4650
+	7650 4550 7750 4650
 Entry Wire Line
-	7850 4450 7950 4550
+	7650 4450 7750 4550
 Entry Wire Line
-	7850 4350 7950 4450
+	7650 4350 7750 4450
 Wire Wire Line
-	7850 4350 7100 4350
+	7650 4350 7100 4350
 Wire Wire Line
-	7100 4450 7850 4450
+	7100 4450 7650 4450
 Text Label 7150 4350 0    50   ~ 0
 USB1_D-
 Text Label 7150 4450 0    50   ~ 0
@@ -521,11 +521,11 @@ F 3 "~" H 800 3900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7100 4650 7850 4650
+	7100 4650 7650 4650
 Text Label 7150 4650 0    50   ~ 0
 STM_SWDCLCK
 Wire Wire Line
-	7100 4550 7850 4550
+	7100 4550 7650 4550
 Text Label 7150 4550 0    50   ~ 0
 STM_SWDIO
 Entry Wire Line
@@ -582,13 +582,13 @@ Text Notes 1000 4550 0    50   ~ 0
 Production board
 Wire Notes Line
 	550  3300 550  5250
-Text Label 5050 3450 0    50   ~ 0
+Text Label 5150 3450 0    50   ~ 0
 STM_BOOT1
 Entry Wire Line
-	4950 2250 5050 2350
+	5050 2250 5150 2350
 Wire Wire Line
-	5800 2350 5050 2350
-Text Label 5050 2350 0    50   ~ 0
+	5800 2350 5150 2350
+Text Label 5150 2350 0    50   ~ 0
 STM_BOOT0
 $Comp
 L power:+3.3V #PWR026
@@ -793,38 +793,38 @@ Wire Wire Line
 	2000 4100 2000 4950
 Wire Wire Line
 	2000 4950 2100 4950
-Text HLabel 5500 3850 0    50   Input ~ 0
+Text HLabel 5600 3850 0    50   Input ~ 0
 ST_H_CLK
-Text HLabel 5500 3950 0    50   Input ~ 0
+Text HLabel 5600 3950 0    50   Input ~ 0
 ST_H_SDA
 Wire Wire Line
-	5500 3850 5800 3850
+	5600 3850 5800 3850
 Wire Wire Line
-	5800 3950 5500 3950
+	5800 3950 5600 3950
 Wire Wire Line
-	5050 4050 5800 4050
+	5150 4050 5800 4050
 Wire Wire Line
-	5800 4150 5050 4150
-Text Label 5050 4050 0    50   ~ 0
+	5800 4150 5150 4150
+Text Label 5150 4050 0    50   ~ 0
 STM_CAN_RX
-Text Label 5050 4150 0    50   ~ 0
+Text Label 5150 4150 0    50   ~ 0
 STM_CAN_TX
-Text Label 5050 4350 0    50   ~ 0
+Text Label 5150 4350 0    50   ~ 0
 STM_CNTRL_SDA
-Text Label 5050 4250 0    50   ~ 0
+Text Label 5150 4250 0    50   ~ 0
 STM_CNTRL_CLK
 Text Label 7150 4250 0    50   ~ 0
 STM_RX
 Text Label 7150 4150 0    50   ~ 0
 STM_TX
 Entry Wire Line
-	7850 4250 7950 4350
+	7650 4250 7750 4350
 Entry Wire Line
-	7850 4150 7950 4250
+	7650 4150 7750 4250
 Wire Wire Line
-	7100 4150 7850 4150
+	7100 4150 7650 4150
 Wire Wire Line
-	7100 4250 7850 4250
+	7100 4250 7650 4250
 Text HLabel 7200 3250 2    50   Input ~ 0
 STM_GPIO0
 Text HLabel 7200 3350 2    50   Input ~ 0
@@ -842,9 +842,9 @@ STM_GPIO6
 Text HLabel 7200 3950 2    50   Input ~ 0
 STM_GPIO7
 Wire Wire Line
-	5050 3450 5800 3450
+	5150 3450 5800 3450
 Entry Wire Line
-	4950 3350 5050 3450
+	5050 3350 5150 3450
 Wire Wire Line
 	7200 3950 7100 3950
 Wire Wire Line
@@ -861,22 +861,22 @@ Wire Wire Line
 	7200 3350 7100 3350
 Wire Wire Line
 	7100 3250 7200 3250
-Text HLabel 5700 3350 0    50   Input ~ 0
+Text HLabel 5600 3350 0    50   Input ~ 0
 STM_GPIO
-Text HLabel 5700 3250 0    50   Input ~ 0
+Text HLabel 5600 3250 0    50   Input ~ 0
 STM_GE
-Text HLabel 5700 3550 0    50   Input ~ 0
+Text HLabel 5600 3550 0    50   Input ~ 0
 STM_A0
-Text HLabel 5700 3650 0    50   Input ~ 0
+Text HLabel 5600 3650 0    50   Input ~ 0
 STM_A1
 Wire Wire Line
-	5700 3250 5800 3250
+	5600 3250 5800 3250
 Wire Wire Line
-	5800 3350 5700 3350
+	5800 3350 5600 3350
 Wire Wire Line
-	5700 3550 5800 3550
+	5600 3550 5800 3550
 Wire Wire Line
-	5800 3650 5700 3650
+	5800 3650 5600 3650
 Text HLabel 7200 4050 2    50   Input ~ 0
 STM_GPIO8
 Text HLabel 7200 4750 2    50   Input ~ 0
@@ -1064,7 +1064,7 @@ F 3 "" H 3200 1200 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3200 1300 3200 1200
-Text Label 5050 2850 0    50   ~ 0
+Text Label 5150 2850 0    50   ~ 0
 STM_LED1
 $Comp
 L Device:R R_RST1
@@ -1095,10 +1095,10 @@ Wire Wire Line
 Wire Wire Line
 	5650 2150 5800 2150
 Entry Wire Line
-	4950 4650 5050 4750
+	5050 4650 5150 4750
 Wire Wire Line
-	5800 4750 5050 4750
-Text Label 5050 4750 0    50   ~ 0
+	5800 4750 5150 4750
+Text Label 5150 4750 0    50   ~ 0
 STM_BTN1
 Wire Notes Line
 	4400 1550 4400 3000
@@ -1237,10 +1237,10 @@ Wire Notes Line
 	3100 3000 4600 3000
 Wire Notes Line
 	4600 700  4600 3000
-Text HLabel 5700 3750 0    50   Input ~ 0
+Text HLabel 5600 3750 0    50   Input ~ 0
 STM_OVS
 Wire Wire Line
-	5800 3750 5700 3750
+	5800 3750 5600 3750
 Wire Bus Line
 	4200 2050 4200 2450
 Wire Bus Line
@@ -1256,7 +1256,7 @@ Wire Bus Line
 Wire Bus Line
 	10850 1450 10850 2950
 Wire Bus Line
-	7950 1900 7950 4850
+	7750 4150 7750 4850
 Wire Bus Line
-	4950 1850 4950 4850
+	5050 2200 5050 4850
 $EndSCHEMATC

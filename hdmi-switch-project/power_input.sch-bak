@@ -4,12 +4,12 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 2 4
-Title ""
-Date ""
+Title "HDMI Switch 4:2 modul"
+Date "2020-06-30"
 Rev ""
 Comp ""
-Comment1 ""
-Comment2 ""
+Comment1 "Devel board"
+Comment2 "Power input (ATX20p connector)"
 Comment3 ""
 Comment4 ""
 $EndDescr
