@@ -1,0 +1,187 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 3
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:ATX-20 J?
+U 1 1 5F7CBCCC
+P 2250 1900
+F 0 "J?" H 2250 2567 50  0000 C CNN
+F 1 "ATX-20" H 2250 2476 50  0000 C CNN
+F 2 "" H 2250 1800 50  0001 C CNN
+F 3 "https://web.aub.edu.lb/pub/docs/atx_201.pdf#page=20" H 3350 1350 50  0001 C CNN
+	1    2250 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F7CCFBC
+P 2250 2600
+F 0 "#PWR?" H 2250 2350 50  0001 C CNN
+F 1 "GND" H 2255 2427 50  0000 C CNN
+F 2 "" H 2250 2600 50  0001 C CNN
+F 3 "" H 2250 2600 50  0001 C CNN
+	1    2250 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5F7CD372
+P 4600 1800
+F 0 "#PWR?" H 4600 1650 50  0001 C CNN
+F 1 "+5V" V 4615 1928 50  0000 L CNN
+F 2 "" H 4600 1800 50  0001 C CNN
+F 3 "" H 4600 1800 50  0001 C CNN
+	1    4600 1800
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5F7CDDDA
+P 4600 2000
+F 0 "#PWR?" H 4600 1850 50  0001 C CNN
+F 1 "+3.3V" V 4615 2128 50  0000 L CNN
+F 2 "" H 4600 2000 50  0001 C CNN
+F 3 "" H 4600 2000 50  0001 C CNN
+	1    4600 2000
+	0    1    1    0   
+$EndComp
+NoConn ~ 2750 2200
+$Comp
+L Switch:SW_DIP_x01 SW?
+U 1 1 5F7CEB17
+P 1150 1950
+F 0 "SW?" V 1104 2080 50  0000 L CNN
+F 1 "SW_DIP_x01" V 1195 2080 50  0000 L CNN
+F 2 "" H 1150 1950 50  0001 C CNN
+F 3 "~" H 1150 1950 50  0001 C CNN
+	1    1150 1950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1750 1500 1150 1500
+Wire Wire Line
+	1150 1500 1150 1650
+Wire Wire Line
+	1150 2250 1150 2550
+$Comp
+L Device:R R_ATX_ON
+U 1 1 5F7D0032
+P 1600 2550
+F 0 "R_ATX_ON" V 1393 2550 50  0000 C CNN
+F 1 "0R" V 1484 2550 50  0000 C CNN
+F 2 "" V 1530 2550 50  0001 C CNN
+F 3 "~" H 1600 2550 50  0001 C CNN
+F 4 "TODO: Find out if ATX switching on (Green - Black) is best with 0ohm or different resistor" V 1600 2550 50  0001 C CNN "Note"
+	1    1600 2550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2250 2500 2250 2550
+Wire Wire Line
+	1450 2550 1150 2550
+Wire Wire Line
+	1750 2550 2250 2550
+Connection ~ 2250 2550
+Wire Wire Line
+	2250 2550 2250 2600
+$Comp
+L Device:CP C_PWR?
+U 1 1 5F7D24ED
+P 3000 2200
+F 0 "C_PWR?" H 3118 2246 50  0000 L CNN
+F 1 "2200u" H 3118 2155 50  0000 L CNN
+F 2 "" H 3038 2050 50  0001 C CNN
+F 3 "~" H 3000 2200 50  0001 C CNN
+	1    3000 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C_PWR?
+U 1 1 5F7D2C8B
+P 3500 2200
+F 0 "C_PWR?" H 3618 2246 50  0000 L CNN
+F 1 "2200u" H 3618 2155 50  0000 L CNN
+F 2 "" H 3538 2050 50  0001 C CNN
+F 3 "~" H 3500 2200 50  0001 C CNN
+	1    3500 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C_PWR?
+U 1 1 5F7D313A
+P 4000 2200
+F 0 "C_PWR?" H 4118 2246 50  0000 L CNN
+F 1 "2200u" H 4118 2155 50  0000 L CNN
+F 2 "" H 4038 2050 50  0001 C CNN
+F 3 "~" H 4000 2200 50  0001 C CNN
+	1    4000 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C_PWR?
+U 1 1 5F7D426E
+P 4500 2200
+F 0 "C_PWR?" H 4618 2246 50  0000 L CNN
+F 1 "2200u" H 4618 2155 50  0000 L CNN
+F 2 "" H 4538 2050 50  0001 C CNN
+F 3 "~" H 4500 2200 50  0001 C CNN
+	1    4500 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3000 2350 3000 2400
+Wire Wire Line
+	3000 2400 3500 2400
+Wire Wire Line
+	3500 2400 3500 2350
+Wire Wire Line
+	3500 2400 4000 2400
+Wire Wire Line
+	4000 2400 4000 2350
+Connection ~ 3500 2400
+Wire Wire Line
+	4000 2400 4500 2400
+Wire Wire Line
+	4500 2400 4500 2350
+Connection ~ 4000 2400
+Wire Wire Line
+	2750 2000 3000 2000
+Wire Wire Line
+	3000 2000 3000 2050
+Wire Wire Line
+	3000 2000 4000 2000
+Wire Wire Line
+	4000 2000 4000 2050
+Connection ~ 3000 2000
+Wire Wire Line
+	2750 1800 3500 1800
+Wire Wire Line
+	3500 1800 3500 2050
+Wire Wire Line
+	3500 1800 4500 1800
+Wire Wire Line
+	4500 1800 4500 2050
+Connection ~ 3500 1800
+Wire Wire Line
+	4000 2000 4600 2000
+Connection ~ 4000 2000
+Wire Wire Line
+	4600 1800 4500 1800
+Connection ~ 4500 1800
+Text HLabel 3100 1500 2    50   Input ~ 0
+ATX_PWR_OK
+Wire Wire Line
+	3100 1500 2750 1500
+$EndSCHEMATC
