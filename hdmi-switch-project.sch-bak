@@ -1,7 +1,7 @@
 EESchema Schematic File Version 4
 EELAYER 30 0
 EELAYER END
-$Descr A3 16535 11693
+$Descr A3 11693 16535 portrait
 encoding utf-8
 Sheet 1 4
 Title ""
