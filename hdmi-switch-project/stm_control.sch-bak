@@ -439,7 +439,7 @@ Wire Wire Line
 Wire Wire Line
 	1150 3150 1150 3100
 Text GLabel 950  3150 0    50   Input ~ 0
-SHLIELD
+SHIELD
 Wire Wire Line
 	950  3150 1050 3150
 Wire Wire Line
