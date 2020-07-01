@@ -15,8 +15,6 @@ Comment4 ""
 $EndDescr
 Text GLabel 7400 1450 3    50   Input ~ 0
 SHIELD
-Text GLabel 7300 3150 3    50   Input ~ 0
-SHIELD
 Text GLabel 10200 3100 3    50   Input ~ 0
 SHIELD
 Wire Wire Line
@@ -129,9 +127,6 @@ Wire Wire Line
 Connection ~ 10200 3000
 Wire Wire Line
 	7300 3050 7300 2950
-Wire Wire Line
-	7300 3150 7300 3050
-Connection ~ 7300 3050
 Wire Wire Line
 	7400 1350 7400 1250
 Wire Wire Line
@@ -1007,8 +1002,6 @@ F 3 "https://www.ti.com/lit/gpn/tmds442" H 2250 5600 50  0001 C CNN
 $EndComp
 Text HLabel 3800 4950 2    50   Input ~ 0
 HDMI_GPIO
-Text Label 3700 6800 0    50   ~ 0
-VSDAJ
 Wire Wire Line
 	3700 6800 3900 6800
 Connection ~ 3350 7500
@@ -1785,6 +1778,11 @@ Entry Wire Line
 	8150 5650 8250 5750
 Connection ~ 9050 5850
 Connection ~ 9050 6250
+Connection ~ 7300 3050
+Wire Wire Line
+	7300 3150 7300 3050
+Text GLabel 7300 3150 3    50   Input ~ 0
+SHIELD
 Wire Bus Line
 	4750 2150 7050 2150
 Wire Bus Line

@@ -953,12 +953,8 @@ Wire Wire Line
 	3700 6400 3800 6400
 Wire Wire Line
 	3800 6500 3700 6500
-Wire Wire Line
-	3700 6650 3800 6650
 Text HLabel 3800 4800 2    50   Input ~ 0
 HDMI_GE
-Text HLabel 3800 6650 2    50   Input ~ 0
-HDMI_OVS
 Text HLabel 3800 6500 2    50   Input ~ 0
 HDMI_A1
 Text HLabel 3800 6400 2    50   Input ~ 0
@@ -987,23 +983,8 @@ Text HLabel 3800 5150 2    50   Input ~ 0
 HDMI_GPIO1
 Text HLabel 3800 5050 2    50   Input ~ 0
 HDMI_GPIO0
-$Comp
-L Interface_HDMI:TMDS442_single_unit U?
-U 1 1 5FA3896A
-P 2350 4250
-AR Path="/5FA3896A" Ref="U?"  Part="1" 
-AR Path="/5F9FB5DF/5FA3896A" Ref="U1"  Part="1" 
-F 0 "U1" H 2450 7581 50  0000 C CNN
-F 1 "TMDS442_single_unit" H 2450 7490 50  0000 C CNN
-F 2 "Package_QFP:TQFP-128_14x14mm_P0.4mm" H 2250 5600 50  0001 C CNN
-F 3 "https://www.ti.com/lit/gpn/tmds442" H 2250 5600 50  0001 C CNN
-	1    2350 4250
-	1    0    0    -1  
-$EndComp
 Text HLabel 3800 4950 2    50   Input ~ 0
 HDMI_GPIO
-Text Label 3700 6800 0    50   ~ 0
-VSDAJ
 Wire Wire Line
 	3700 6800 3900 6800
 Connection ~ 3350 7500
@@ -1495,8 +1476,6 @@ F 3 "" H 3350 1000 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3350 1050 3350 1000
-Wire Wire Line
-	3900 6800 3900 6950
 $Comp
 L Device:R R_VSDAJ?
 U 1 1 5FA38789
@@ -1504,7 +1483,7 @@ P 3900 7100
 AR Path="/5FA38789" Ref="R_VSDAJ?"  Part="1" 
 AR Path="/5F9FB5DF/5FA38789" Ref="R_VSDAJ1"  Part="1" 
 F 0 "R_VSDAJ1" H 3970 7146 50  0000 L CNN
-F 1 "4K6" H 3970 7055 50  0000 L CNN
+F 1 "4K64 1%" H 3970 7055 50  0000 L CNN
 F 2 "Resistor_SMD:R_1020_2550Metric" V 3830 7100 50  0001 C CNN
 F 3 "~" H 3900 7100 50  0001 C CNN
 F 4 "Precission" H 3900 7100 50  0001 C CNN "Note"
@@ -1781,6 +1760,10 @@ Entry Wire Line
 Connection ~ 9050 5850
 Connection ~ 9050 6250
 Connection ~ 7300 3050
+Wire Wire Line
+	7300 3150 7300 3050
+Text GLabel 7300 3150 3    50   Input ~ 0
+SHIELD
 Wire Bus Line
 	7600 5750 9900 5750
 Wire Bus Line
@@ -1798,7 +1781,22 @@ Wire Bus Line
 Wire Bus Line
 	4750 2150 7050 2150
 Wire Wire Line
-	7300 3150 7300 3050
-Text GLabel 7300 3150 3    50   Input ~ 0
-SHIELD
+	3900 6800 3900 6950
+$Comp
+L Interface_HDMI:TMDS442_single_unit U?
+U 1 1 5FA3896A
+P 2350 4250
+AR Path="/5FA3896A" Ref="U?"  Part="1" 
+AR Path="/5F9FB5DF/5FA3896A" Ref="U1"  Part="1" 
+F 0 "U1" H 2450 7581 50  0000 C CNN
+F 1 "TMDS442_single_unit" H 2450 7490 50  0000 C CNN
+F 2 "Package_QFP:TQFP-128_14x14mm_P0.4mm" H 2250 5600 50  0001 C CNN
+F 3 "https://www.ti.com/lit/gpn/tmds442" H 2250 5600 50  0001 C CNN
+	1    2350 4250
+	1    0    0    -1  
+$EndComp
+Text HLabel 3800 6650 2    50   Input ~ 0
+HDMI_OVS
+Wire Wire Line
+	3700 6650 3800 6650
 $EndSCHEMATC
