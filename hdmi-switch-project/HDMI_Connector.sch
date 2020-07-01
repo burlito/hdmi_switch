@@ -1,0 +1,214 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 10
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text GLabel 5150 4500 0    50   Input ~ 0
+SHIELD
+Wire Wire Line
+	5650 4650 5450 4650
+$Comp
+L power:GND #PWR?
+U 1 1 5F1D2A29
+P 5450 4650
+AR Path="/5F1D2A29" Ref="#PWR?"  Part="1" 
+AR Path="/5F9FB5DF/5F1D2A29" Ref="#PWR?"  Part="1" 
+AR Path="/5F9FB5DF/5F1D1914/5F1D2A29" Ref="#PWR?"  Part="1" 
+AR Path="/5F9FB5DF/5F3541D3/5F1D2A29" Ref="#PWR?"  Part="1" 
+AR Path="/5F9FB5DF/5F488D77/5F1D2A29" Ref="#PWR?"  Part="1" 
+AR Path="/5F9FB5DF/5F55479C/5F1D2A29" Ref="#PWR?"  Part="1" 
+AR Path="/5F9FB5DF/5F8C3CBB/5F1D2A29" Ref="#PWR?"  Part="1" 
+AR Path="/5F9FB5DF/5F9BFF7E/5F1D2A29" Ref="#PWR?"  Part="1" 
+AR Path="/5F9FB5DF/5FC1743B/5F1D2A29" Ref="#PWR?"  Part="1" 
+AR Path="/5F9FB5DF/5FC1746D/5F1D2A29" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 5450 4400 50  0001 C CNN
+F 1 "GND" H 5455 4477 50  0000 C CNN
+F 2 "" H 5450 4650 50  0001 C CNN
+F 3 "" H 5450 4650 50  0001 C CNN
+	1    5450 4650
+	0    1    1    0   
+$EndComp
+Connection ~ 5550 4500
+Connection ~ 5450 4500
+Connection ~ 5350 4500
+Wire Wire Line
+	5350 4500 5450 4500
+Wire Wire Line
+	5450 4500 5550 4500
+Wire Wire Line
+	5750 4500 5550 4500
+Wire Wire Line
+	5250 4500 5350 4500
+Wire Wire Line
+	5150 4500 5250 4500
+Connection ~ 5250 4500
+$Comp
+L Connector:HDMI_A_1.4 J?
+U 1 1 5F1D2A38
+P 5450 3200
+AR Path="/5F1D2A38" Ref="J?"  Part="1" 
+AR Path="/5F9FB5DF/5F1D2A38" Ref="J?"  Part="1" 
+AR Path="/5F9FB5DF/5F1D1914/5F1D2A38" Ref="J_HDMI_?"  Part="1" 
+AR Path="/5F9FB5DF/5F3541D3/5F1D2A38" Ref="J_HDMI_?"  Part="1" 
+AR Path="/5F9FB5DF/5F488D77/5F1D2A38" Ref="J_HDMI_?"  Part="1" 
+AR Path="/5F9FB5DF/5F55479C/5F1D2A38" Ref="J_HDMI_?"  Part="1" 
+AR Path="/5F9FB5DF/5F8C3CBB/5F1D2A38" Ref="J_HDMI_?"  Part="1" 
+AR Path="/5F9FB5DF/5F9BFF7E/5F1D2A38" Ref="J_HDMI_?"  Part="1" 
+AR Path="/5F9FB5DF/5FC1743B/5F1D2A38" Ref="J_HDMI_?"  Part="1" 
+AR Path="/5F9FB5DF/5FC1746D/5F1D2A38" Ref="J_HDMI_?"  Part="1" 
+F 0 "J_HDMI_?" V 6017 3200 50  0000 C CNN
+F 1 "HDMI_A_1.4" V 5926 3200 50  0000 C CNN
+F 2 "Connector_HDMI:HDMI_A_Contact_Technology_HDMI-19APL2_Horizontal" H 5475 3200 50  0001 C CNN
+F 3 "https://en.wikipedia.org/wiki/HDMI" H 5475 3200 50  0001 C CNN
+	1    5450 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 4300 5250 4500
+Wire Wire Line
+	5750 4300 5750 4500
+Wire Wire Line
+	5550 4300 5550 4500
+Wire Wire Line
+	5450 4300 5450 4500
+Wire Wire Line
+	5350 4300 5350 4500
+Wire Wire Line
+	5650 4300 5650 4650
+$Comp
+L Device:R R_HDMI_TERM_A_?
+U 1 1 5F1E0841
+P 4250 4800
+AR Path="/5F9FB5DF/5F1D1914/5F1E0841" Ref="R_HDMI_TERM_A_?"  Part="1" 
+AR Path="/5F9FB5DF/5F3541D3/5F1E0841" Ref="R_HDMI_TERM_A_?"  Part="1" 
+AR Path="/5F9FB5DF/5F488D77/5F1E0841" Ref="R_HDMI_TERM_A_?"  Part="1" 
+AR Path="/5F9FB5DF/5F55479C/5F1E0841" Ref="R_HDMI_TERM_A_?"  Part="1" 
+AR Path="/5F9FB5DF/5F8C3CBB/5F1E0841" Ref="R_HDMI_TERM_A_?"  Part="1" 
+AR Path="/5F9FB5DF/5F9BFF7E/5F1E0841" Ref="R_HDMI_TERM_A_?"  Part="1" 
+AR Path="/5F9FB5DF/5FC1743B/5F1E0841" Ref="R_HDMI_TERM_A_?"  Part="1" 
+AR Path="/5F9FB5DF/5FC1746D/5F1E0841" Ref="R_HDMI_TERM_A_?"  Part="1" 
+F 0 "R_HDMI_TERM_A_?" H 4320 4846 50  0000 L CNN
+F 1 "4K7" H 4320 4755 50  0000 L CNN
+F 2 "" V 4180 4800 50  0001 C CNN
+F 3 "~" H 4250 4800 50  0001 C CNN
+	1    4250 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R_HDMI_TERM_B_?
+U 1 1 5F1E1609
+P 4350 4350
+AR Path="/5F9FB5DF/5F1D1914/5F1E1609" Ref="R_HDMI_TERM_B_?"  Part="1" 
+AR Path="/5F9FB5DF/5F3541D3/5F1E1609" Ref="R_HDMI_TERM_B_?"  Part="1" 
+AR Path="/5F9FB5DF/5F488D77/5F1E1609" Ref="R_HDMI_TERM_B_?"  Part="1" 
+AR Path="/5F9FB5DF/5F55479C/5F1E1609" Ref="R_HDMI_TERM_B_?"  Part="1" 
+AR Path="/5F9FB5DF/5F8C3CBB/5F1E1609" Ref="R_HDMI_TERM_B_?"  Part="1" 
+AR Path="/5F9FB5DF/5F9BFF7E/5F1E1609" Ref="R_HDMI_TERM_B_?"  Part="1" 
+AR Path="/5F9FB5DF/5FC1743B/5F1E1609" Ref="R_HDMI_TERM_B_?"  Part="1" 
+AR Path="/5F9FB5DF/5FC1746D/5F1E1609" Ref="R_HDMI_TERM_B_?"  Part="1" 
+F 0 "R_HDMI_TERM_B_?" H 4420 4396 50  0000 L CNN
+F 1 "4K7" H 4420 4305 50  0000 L CNN
+F 2 "" V 4280 4350 50  0001 C CNN
+F 3 "~" H 4350 4350 50  0001 C CNN
+	1    4350 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 5050 4250 4950
+Wire Wire Line
+	4350 5050 4350 4500
+Wire Wire Line
+	5050 3600 4350 3600
+Wire Wire Line
+	4350 3600 4350 4200
+Wire Wire Line
+	4250 4650 4250 3500
+Wire Wire Line
+	4250 3500 5050 3500
+Text HLabel 4900 2400 0    50   Input ~ 0
+D2+
+Text HLabel 4900 2500 0    50   Input ~ 0
+D2-
+Text HLabel 4900 2600 0    50   Input ~ 0
+D1+
+Text HLabel 4900 2700 0    50   Input ~ 0
+D1-
+Text HLabel 4900 2800 0    50   Input ~ 0
+D0+
+Text HLabel 4900 2900 0    50   Input ~ 0
+D0-
+Text HLabel 4900 3000 0    50   Input ~ 0
+CK+
+Text HLabel 4900 3100 0    50   Input ~ 0
+CK-
+Text HLabel 4100 3500 0    50   Input ~ 0
+SCL
+Text HLabel 4100 3600 0    50   Input ~ 0
+SDA
+Text HLabel 4900 3900 0    50   Input ~ 0
+HPD
+Wire Wire Line
+	4900 3900 5050 3900
+Wire Wire Line
+	4100 3600 4350 3600
+Connection ~ 4350 3600
+Wire Wire Line
+	4250 3500 4100 3500
+Connection ~ 4250 3500
+Wire Wire Line
+	5050 3100 4900 3100
+Wire Wire Line
+	4900 3000 5050 3000
+Wire Wire Line
+	5050 2900 4900 2900
+Wire Wire Line
+	4900 2800 5050 2800
+Wire Wire Line
+	5050 2700 4900 2700
+Wire Wire Line
+	4900 2600 5050 2600
+Wire Wire Line
+	5050 2500 4900 2500
+Wire Wire Line
+	4900 2400 5050 2400
+Text HLabel 5450 1950 1    50   Input ~ 0
+HDMI_5V
+Wire Wire Line
+	5450 1950 5450 2100
+Wire Wire Line
+	4250 5050 4350 5050
+$Comp
+L power:+5V #PWR?
+U 1 1 5F1F8C4D
+P 4000 4950
+AR Path="/5F9FB5DF/5F1D1914/5F1F8C4D" Ref="#PWR?"  Part="1" 
+AR Path="/5F9FB5DF/5F3541D3/5F1F8C4D" Ref="#PWR?"  Part="1" 
+AR Path="/5F9FB5DF/5F488D77/5F1F8C4D" Ref="#PWR?"  Part="1" 
+AR Path="/5F9FB5DF/5F55479C/5F1F8C4D" Ref="#PWR?"  Part="1" 
+AR Path="/5F9FB5DF/5F8C3CBB/5F1F8C4D" Ref="#PWR?"  Part="1" 
+AR Path="/5F9FB5DF/5F9BFF7E/5F1F8C4D" Ref="#PWR?"  Part="1" 
+AR Path="/5F9FB5DF/5FC1743B/5F1F8C4D" Ref="#PWR?"  Part="1" 
+AR Path="/5F9FB5DF/5FC1746D/5F1F8C4D" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 4000 4800 50  0001 C CNN
+F 1 "+5V" H 4015 5123 50  0000 C CNN
+F 2 "" H 4000 4950 50  0001 C CNN
+F 3 "" H 4000 4950 50  0001 C CNN
+	1    4000 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 5050 4000 5050
+Wire Wire Line
+	4000 5050 4000 4950
+Connection ~ 4250 5050
+$EndSCHEMATC

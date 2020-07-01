@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 1 4
+Sheet 1 10
 Title "HDMI Switch 4:2 modul"
 Date "2020-06-30"
 Rev ""
