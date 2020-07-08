@@ -1,3 +1,4 @@
 (sym_lib_table
   (lib (name TMDS442PNP)(type Legacy)(uri /media/kicad/projects/HDMI-Basic-Switch/hdmi-switch-project/TMDS442-functional-2020-06-27_07-51-25/2020-06-27_07-51-25.lib)(options "")(descr "")(disabled))
+  (lib (name 2020-07-01_16-18-06)(type Legacy)(uri /home/burlak/sand/KiCAD/2020-07-01_16-18-06/2020-07-01_16-18-06.lib)(options "")(descr ""))
 )
